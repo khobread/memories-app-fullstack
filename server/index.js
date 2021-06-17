@@ -19,7 +19,7 @@ app.use('/user', userRoutes);
 
 //MongoDB Cloud Atlas
 
-const CONNECTION_URL = 'mongodb+srv://khobread:memories-app@cluster0.8cwpk.mongodb.net/test?retryWrites=true&w=majority'
+const CONNECTION_URL = 'mongodb://khobread:memories-app@khobread-memories-mongo-production/memories'
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
